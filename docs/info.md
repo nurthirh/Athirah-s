@@ -9,19 +9,19 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-AND are connected to input b and c ,  NAND is connected to input a, OR gates are connected to input RST_N and c.
+AND are connected to input b and c ,  NAND is connected to input a, OR gates are connected to input c.
 
 ## How to test
 
 Set the inputs and check the outputs match with the expected results:
 
-| Input a | input b | input c | output AND | output NAND | ouput OR |
-0          0          0        0            1              
-0          0          1        0            1
-0          1          0        0            1
-0          1          1        1            1
-1          0          0        0            0
-1          0          1        0            0
+| Input a | input b | input c | output AND | output NAND | output OR |
+0          0          0        0            1              0
+0          0          1        0            1              1
+0          1          0        0            1              0
+0          1          1        1            1              1
+1          0          0        0            0              0
+1          0          1        0            0              1
 1          1          0        0            0
 1          1          1        1            0
 
